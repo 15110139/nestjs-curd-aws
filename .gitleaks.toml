@@ -1,0 +1,20 @@
+# Gitleaks configuration
+# This file allows customization of secret detection rules
+
+title = "gitleaks config"
+
+[extend]
+# Use default gitleaks rules
+useDefault = true
+
+[[allowlist]]
+# Allowlist patterns for false positives
+description = "Ignore badge URLs and example tokens in README"
+paths = [
+  '''README\.md''',
+]
+
+# You can add more allowlist rules here if needed
+# [[allowlist]]
+# description = "Ignore test files"
+# paths = ['''test/.*''', '''.*\.test\.ts''']

@@ -15,5 +15,3 @@ test
 .github
 .eslintrc.js
 .prettierrc
-tsconfig*.json
-nest-cli.json
